@@ -16,42 +16,46 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <div class="row">
             <h5>Categories</h5>
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <button type="button" class="btn btn-success border-success" onclick="addInput()">+ Add New</button>
+                <button type="button" class="btn btn-success border-success" @click="addInput">+ Add New</button>
             </div>
             <div class="col-sm-6">
-                <input type="text" placeholder="Search" class="px-2 py-1" style="float: right;">
+                <input type="text" placeholder="Search" class="px-2 py-1" v-model="searchText" style="float: right;">
             </div>
         </div>
         <div class="category-list">
-            <!-- This is where dynamically added inputs will go -->
-        </div>
-    </div>
-    <script>
-        function addInput() {
-            var categoryList = document.querySelector('.category-list');
-            var newRow = document.createElement('div');
-            newRow.classList.add('row', 'mt-4');
-            newRow.innerHTML = `
+            <div class="row mt-4" v-for="(category, index) in categories" :key="index">
                 <div class="col-sm-11">
-                    <input type="text" placeholder="New Category" class="w-100 px-3">
+                    <input type="text" placeholder="New Category" class="w-100 px-3" v-model="category.name">
                 </div>
                 <div class="col-sm-1">
-                    <i class="fa-solid fa-trash-can text-success" style="float: right;" onclick="deleteInput(this)"></i>
+                    <i class="fa-solid fa-trash-can text-success" style="float: right;" @click="deleteInput(index)"></i>
                 </div>
-            `;
-            categoryList.appendChild(newRow);
-        }
-
-        function deleteInput(element) {
-            var row = element.closest('.row');
-            row.remove();
-        }
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                categories: [],
+                searchText: ''
+            },
+            methods: {
+                addInput() {
+                    this.categories.push({ name: '' });
+                },
+                deleteInput(index) {
+                    this.categories.splice(index, 1);
+                }
+            }
+        });
     </script>
 </body>
 </html>
