@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.main {
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+}
+
+th,
+td {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.my-table th {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* .filter_input_width{
+    width:100px;
+} */
+#dataNotFound {
+    color: red;
+}
+
+.status-column {
+    color: red;
+    font-weight: bold;
+}

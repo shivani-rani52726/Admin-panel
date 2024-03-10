@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Login-form</title>
+  </head>
+  <body class="vw-100 vh-100">
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 mt-5">
+                <h3 class="text-center">Login</h3>
+                <div>
+                    <form action="" method="" enctype="multipart/form-data">
+                        <div class="my-2">
+                            <label for="Email-Phone" class="my-2 fw-bold">Email or Phone<span class="text-danger">*</span></label>
+                            <input type="email" class="w-100 form-control" name="email" id="Email-Phone">
+                        </div> 
+                        <div class="my-2">
+                            <label for="password" class="my-2 fw-bold">Password<span class="text-danger">*</span></label>
+                            <input type="password" class="w-100 form-control" name="Password" id="password">
+                        </div>
+                        <div class="my-2 d-flex">
+                            <input type="checkbox"  name="reminder" id="reminder">
+                            <label for="reminder" class="my-2 mx-2">Remember me</label>
+                            <a href="#" class="ms-auto my-2 text-decoration-none">forgot Password?</a>
+                        </div>
+                        <div class="my-2">
+                            <button type="button" class="w-100 bg-dark text-light text-center">SIGN IN</button>
+                        </div>
+                        <div class="my-2">
+                            <span class="text-center d-block">Don't Have an Account</span>
+                        </div>
+                        <div class="my-2">
+                            <button type="button" class="w-100  text-center">CREATE ACCOUNT</button>
+                        </div>
+                    </form>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script>
+
+  </body>
+</html>
