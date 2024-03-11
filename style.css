@@ -58,9 +58,9 @@ h1{
 h2{
     font-size:1.4rem;
 }
-h3{
+/* h3{
     font-size:0.87rem;
-}
+} */
 h4{
     font-size:0.8rem;
 }
@@ -130,9 +130,9 @@ aside .sidebar{
     top:1rem;
 }
 
-aside .h3{
+/* aside .h3{
     font-weight:500;
-}
+} */
 aside .sidebar a{
     display: flex;
     color:black;
