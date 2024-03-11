@@ -33,17 +33,21 @@
             flex-direction: column;
             position: relative;
             top: 0;
-            /* Adjusted to top for fixed position */
+            
             bottom: 0;
-            /* Adjusted to bottom for fixed position */
+
             left: 0;
-            /* Adjusted to left for fixed position */
+
             overflow-y: auto;
             width: 250px;
-            height:100vh;
-            /* Adjusted sidebar width */
-            /* Added to enable vertical scrollbar */
+            height: 80vh;
+            max-height: calc(80vh - 60px);
         }
+
+        .sidebar a:last-child {
+            position: static;
+        }
+
 
         a {
             color: black;
@@ -102,11 +106,6 @@
             /* Set z-index to make sure it's above other content */
         }
 
-     /* .sidebar a:last-child{
-        position:absolute;
-        top:800px;
-        left:0px;
-     } */
     </style>
 </head>
 
