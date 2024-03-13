@@ -1,0 +1,94 @@
+Table 1
+     *S.N.
+     *ULB Name
+     *New Data as on date (New Survey +New PID Created)
+     *NDC data as on 17.01.2024
+              1.Integrated (new Survay)
+              2.Non-Integrated (New Data)
+              3.Non-Integrated (Old Data)
+     *Integration done using LINK-DELINK Option         
+     *% of Integration         
+     *Explanations regarding all points/indicators, if any
+     *Total Pendency as on date 17.01.2024
+     *Reason of Pendency /Remarks
+
+Table 2    
+     *MC Name
+     *Total Objections
+     *Approved
+     *Rejected
+     *Pending With Citizen Level/Reverted
+     *Pending (as on )
+              1.Pending with MC (22-11-2023)
+              2.Pending with MC (17.01.2024)
+              3.Pending with Citizen (22-11-2023)
+              4.Pending with Citizen (17.01.2024)
+              5.Total Pending (as on date)
+              6.Percentage change in last review meeting
+
+Table 3
+     *Sr No.             
+     *ULB Name             
+     *No. of Objection analysis              
+     *No. of wrongly rejected/reverted found             
+     *Disciplinary Action Taken/Penality Imposed             
+     *Remarks    
+
+Table 4
+     *S.N.             
+     *MC Name             
+     *Establishment of Helpdesk              
+     *No. of Deployment of trained official             
+     *Detail of Training conducted             
+     *Remarks  
+
+Table 5
+     *S.N.             
+     *MC Name             
+     *Total No of Property              
+     *No. of property Owner name and Mobile No is Null (24-11-2023)             
+     *No. of property Owner name and Mobile No is Null (17.01.2024)             
+     *Percentage of progress  
+
+Table 6
+     *Sr.No.             
+     *ULB Name             
+     *Total No. of Properties              
+     *Self Certified PIDs date 22.11.2023             
+     *Self Certified PIDs (17.01.2024)             
+     *Increase of percentage    
+
+Table 7
+     *Sr.No.
+     *ULB Name             
+     *No. of Colonies              
+     *Boundary Certification             
+     *Development Charges             
+     *Status 
+
+Table 8
+     *Sr.No.
+     *ULB Name             
+     *No of received application for refund development Charges              
+     *No of cases refund Development charges as on date 17.01.2024             
+     *Refund Amount Details             
+     *Remarks  
+
+Table 9
+     *S.N.
+     *MC Name             
+     *No of colony              
+     *Estimated property ID                        
+     *Remarks     
+
+Table 10
+     *Sr.No.
+     *Name of Municipality            
+     *Total Properties              
+     *Properties mapped (22-11-2023)                        
+     *Properties mapped ( 17.01.2024)                                
+     *Pending mapped                                
+     *Increase of percentage                                
+                
+
+     
