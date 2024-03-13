@@ -27,6 +27,26 @@
             /* background:var(--clr-color-background); */
         }
 
+        .sidebar {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 0;
+            
+            bottom: 0;
+
+            left: 0;
+
+            overflow-y: auto;
+            width: 250px;
+            height: 80vh;
+            max-height: calc(80vh - 60px);
+        }
+
+        .sidebar a:last-child {
+            position: static;
+        }
 
 
         a {
