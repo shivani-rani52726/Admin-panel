@@ -65,6 +65,7 @@
         .link-box {
             background-color: rgb(241, 239, 239);
             height: 200px;
+            /* box-shadow:1px 1px 1px 1px grey; */
         }
         .tab-box{
             display: inline-flex;
@@ -79,9 +80,10 @@
            padding: 15px;
         }
         .link-box:hover{
-            width:310px;
-            height:250px;
+            box-shadow:4px 4px 4px 4px grey;
             border-bottom:2px solid blue;
+            transition:box-shadow 2s linear 1s;
+            transition:border-bottom 2s linear 1s;
         }
        
     </style>
