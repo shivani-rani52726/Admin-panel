@@ -31,144 +31,168 @@
             background-repeat: no-repeat;
             background-position: center;
             margin: 0 auto;
-            width:97vw;
+            width: 97vw;
             height: 50vh;
         }
 
-        .text1 {
-            letter-spacing: 10px;
-            margin-top: -13px;
-        }
 
         .nav-link {
             color: black;
             font-size: 13px;
         }
 
+        .nav-link.active,
         .nav-link:hover {
-            background-color: white;
-            color: black;
-            border-radius: 5px;
+            background-color: white !important;
+            color: black !important;
+            border-radius: 5px !important;
+            border-bottom: 2px solid blue !important;
         }
 
-        .nav-link:active {
-            background-color: white;
-            color: black;
-            border-radius: 5px;
-        }
 
         .main {
             /* border: 2px solid black; */
-            height:50vh;
+            height: 50vh;
         }
 
         .link-box {
             background-color: rgb(241, 239, 239);
             height: 200px;
-            /* box-shadow:1px 1px 1px 1px grey; */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .tab-box{
+
+        .link-box:hover {
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid blue;
+            animation: boxMove 0.5s  infinite alternate;
+        }
+
+        @keyframes boxMove {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .tab-box {
             display: inline-flex;
         }
+
         .icons {
             margin-top: 10px;
             padding: 15px;
-            color:blue;
+            color: blue;
         }
+
         .link-text {
-           margin-top: 10px;
-           padding: 15px;
+            margin-top: 10px;
+            padding: 15px;
         }
-        .link-box:hover{
-            box-shadow:4px 4px 4px 4px grey;
-            border-bottom:2px solid blue;
-            transition:box-shadow 2s linear 1s;
-            transition:border-bottom 2s linear 1s;
-        }
+
+
+
+        /* The animation code */
        
+
+        /* The element to apply the animation to */
+        /* .link-box:hover {
+            box-shadow:1px 1px 1px 1px grey;
+            animation-name: box;
+            border-bottom:2px solid blue;
+            animation-timing-function:ease-in-out;
+        } */
     </style>
 </head>
 
 <body>
     <div class="container-fluid m-0 p-0">
         <header>
-
-            
-            
-            <div class="row m-0 p-0">
+            <div class="row mx-0 my-2">
                 <div class="col-sm-2">
-                    <h3>SMARTMEALS</h3>
-                    <p class="text1">RESTAURANT</p>
+                    <h3 class="py-2">Billing App</h3>
                 </div>
                 <div class="col-sm-8">
                     <ul class="nav mt-2">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active" data-bs-toggle="tab"
+                                data-bs-target="#home">Home</a></li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">My Requests</a>
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#request">My Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link nav-link:active">Production</a>
+                            <a href="#" class="nav-link" data-bs-toggle="tab"
+                                data-bs-target="#production">Production</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Buy</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Items</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Stock</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab"
+                                data-bs-target="#buy">Buy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab"
+                                data-bs-target="#items">Items</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab"
+                                data-bs-target="#stock">Stock</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Work Order</a>
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#order">Work Order</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">QC</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contacts</a>
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#qc">QC</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Reports</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Settings</a>
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tab"
+                                data-bs-target="#reports">Reports</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#settings">Settings</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-sm-2">
-                    <button type="button" class="bg-danger text-light border-danger mt-1 w-50">
-                        Login
-                    </button>
+                    <a type="button" class="btn btn-primary border-primary text-light  w-50 py-2 my-1"
+                        style="float:right;">Login</a>
                 </div>
             </div>
 
 
-             <div class="row"> 
+            <div class="row">
                 <div class="col-sm-12">
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="img/banner1.jpg" class="w-100" height="420px"   alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/banner2.jpg" class="w-100" alt="..." height="420px" width="100%">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/banner3.jpg" class="w-100" height="420px" alt="...">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="img/banner1.jpg" class="w-100" height="420px" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner2.jpg" class="w-100" alt="..." height="420px" width="100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/banner3.jpg" class="w-100" height="420px" alt="...">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
-            </div> 
+            </div>
         </header>
 
-  
-           
-        
+
+
+
         <main class="m-0 p-0 main">
             <div class="row m-0 p-0 my-5">
                 <div class="col-3 my-2">
                     <a href="tables.html" class="table1">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -183,7 +207,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-sharp fa-solid fa-calendar-days fs-3 icons"></i>
@@ -198,7 +222,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -213,7 +237,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -230,7 +254,7 @@
 
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -245,7 +269,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-sharp fa-solid fa-calendar-days fs-3 icons"></i>
@@ -260,7 +284,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -275,7 +299,7 @@
                 </div>
                 <div class="col-3 my-2">
                     <a href="#">
-                        <div class="link-box"  data-aos="zoom-in">
+                        <div class="link-box" data-aos="zoom-in">
                             <div class="tab-box">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-laptop fs-3 icons"></i>
@@ -295,11 +319,11 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
