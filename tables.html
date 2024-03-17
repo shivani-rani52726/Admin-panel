@@ -33,10 +33,6 @@
             height: 50vh;
         }
 
-        .text1 {
-            letter-spacing: 10px;
-            margin-top: -13px;
-        }
 
         .nav-link {
             color: black;
@@ -49,7 +45,7 @@
             border-radius: 5px;
         }
 
-        .nav-link:active {
+        .nav-link.active {
             background-color: white;
             color: black;
             border-radius: 5px;
@@ -63,39 +59,37 @@
         <header>
             <div class="row m-0 p-0">
                 <div class="col-sm-2">
-                    <h3>SMARTMEALS</h3>
-                    <p class="text1">RESTAURANT</p>
+                    <h3 class="py-2">Billing App</h3>
                 </div>
                 <div class="col-sm-8">
                     <ul class="nav mt-2">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link mx-1 active">Home</a></li>
                         <li class="nav-item">
                             <a href="" class="nav-link">My Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link nav-link:active">Production</a>
+                            <a href="#" class="nav-link mx-1 nav-link:active">Production</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Buy</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Items</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Stock</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link mx-1">Buy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link mx-1">Items</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link mx-1">Stock</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Work Order</a>
+                            <a href="#" class="nav-link mx-1">Work Order</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">QC</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link mx-1">QC</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contacts</a>
+                            <a href="#" class="nav-link mx-1">Contacts</a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Reports</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link mx-1">Reports</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Settings</a>
+                            <a href="#" class="nav-link mx-1">Settings</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-sm-2">
-                    <a href="" type="button" class="bg-danger text-light border-danger mt-1 w-50">
-                        Login
-                    </a>
+                    <a type="button" class="btn btn-primary border-primary text-light  w-50 py-2 my-1"
+                        style="float:right;">Login</a>
                 </div>
             </div>
 
